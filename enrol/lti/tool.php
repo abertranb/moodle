@@ -31,6 +31,11 @@ $toolid = required_param('id', PARAM_INT);
 // Get the tool.
 $tool = \enrol_lti\helper::get_lti_tool($toolid);
 
+//Check if is lti call
+if ( ! is_basic_lti_request() ) {
+    print_error('isnotlti', 'auth', '', get_string('pluginname', 'auth_lti'));
+    exit();
+}
 // Create the BLTI request.
 $ltirequest = new BLTI($tool->secret, false, false);
 
