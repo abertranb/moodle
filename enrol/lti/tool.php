@@ -33,7 +33,7 @@ $tool = \enrol_lti\helper::get_lti_tool($toolid);
 
 //Check if is lti call
 if ( ! is_basic_lti_request() ) {
-    print_error('isnotvalidltirequest', 'auth', '', get_string('pluginname', 'auth_lti'));
+    print_error('isnotvalidltirequest', 'enrol_lti', '', get_string('pluginname', 'auth_lti'));
     exit();
 }
 // Create the BLTI request.
