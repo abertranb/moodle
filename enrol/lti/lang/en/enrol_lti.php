@@ -67,3 +67,4 @@ $string['tasksyncmembers'] = 'Publish as LTI tool users sync';
 $string['toolsprovided'] = 'Published tools';
 $string['tooltobeprovided'] = 'Tool to be published';
 $string['userdefaultvalues'] = 'User default values';
+$string['isnotvalidltirequest'] = 'Is not a valid LTI request';
